@@ -1,0 +1,6 @@
+[package]
+version = "0.1.0"
+name = { en = "Fortune", zh = "吉凶占" }
+summary = { en = "Draw one of seven fortunes, great blessing to great misfortune", zh = "从大吉到大凶七档里抽一档" }
+author = "SHORiN-KiWATA"
+icon = "tag"
