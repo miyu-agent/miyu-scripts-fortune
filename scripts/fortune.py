@@ -30,6 +30,9 @@ def main():
     except json.JSONDecodeError as exc:
         print(f"错误：参数不是 JSON：{exc}")
         sys.exit(1)
+    if not isinstance(args, dict):
+        print("错误：参数要是一个 JSON 对象")
+        sys.exit(1)
     question = str(args.get("question") or "").strip()
     grade, meaning = secrets.choice(FORTUNES)
     out = [f"问题：{question}"] if question else []
